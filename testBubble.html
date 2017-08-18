@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+//var a = [1324, 12, 5, 1, 4, 1, 8764, 73, 8765, 45, 2345, 42, 644];
+/*var times = parseInt(prompt("How many values?", "0"), 10);
+
+
+var a1 = parseFloat(prompt("Enter a Value", "0"));
+var a2 = parseFloat(prompt("Enter a Value", "0"));
+var a3 = parseFloat(prompt("Enter a Value", "0"));
+var a4 = parseFloat(prompt("Enter a Value", "0"));
+var a5 = parseFloat(prompt("Enter a Value", "0"));
+var a6 = parseFloat(prompt("Enter a Value", "0"));*/
+
+
+/*while (times != done)
+{
+  done = done + 1;
+
+
+}*/
+
+
+var a = [a1, a2, a3, a4, a5, a6];
+
+function bubbleSort(number)
+{
+  var swapped;
+  do
+  {
+    swapped = false;
+    for (var i = 0; i < a.length - 1; i++)
+    {
+      if (a[i] > a[i + 1])
+      {
+        var temp = a[i];
+        a[i] = a[i+1];
+        a[i+1] = temp;
+        swapped = true;
+      }
+    }
+  } while (swapped);
+}
+
+bubbleSort(a);
+document.write(a);
+
+</script>
+
+</body>
+</html>
